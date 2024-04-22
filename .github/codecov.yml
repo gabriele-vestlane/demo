@@ -8,11 +8,11 @@ coverage:
         base: auto
         # advanced settings
         branches:
-          - master
+          - main
         if_ci_failed: error #success, failure, error, ignore
         only_pulls: false
         flags:
-          - frontend
+          - demo_app
         paths:
-          - src/frontend
+          - src/main/java
         removed_code_behavior: off #removals_only, fully_covered_patch, adjust_base",
