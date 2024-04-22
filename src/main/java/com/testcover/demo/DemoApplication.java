@@ -6,8 +6,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class DemoApplication {
 
+  public static String someLogic(){
+    return "Logic!";
+  }
+
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		var s = someLogic();
+    SpringApplication.run(DemoApplication.class, args);
 	}
 
 }
